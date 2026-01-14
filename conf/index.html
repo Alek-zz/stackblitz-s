@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="st.css" />
+  </head>
+
+  <body style="margin:0px">
+  <div class="conference">
+  <div class="conference-main">
+    <div class="conference-text">
+      <p class="conference-text__title">
+        Строительство и рынок ИЖС 2025:  <br class="only-mobile">Анализ, прогнозы, тренды
+      </p>
+      <p class="conference-text__policy">
+        Реклама. Рекламодатель ООО "ТехноНИКОЛЬ-<br class="only-mobile-cust">Строительные Системы" ИНН
+        7702521529 erid: 2VtzqwA1R1S
+      </p>
+    </div>
+    <div class="conference-date">18.04.2025 в 10:00</div>
+    <div class="conference-cta">
+      <a href="https://www.tn.ru/calendar/konferencziya-izhs-2025/?erid=2VtzqwA1R1S" target="_blank" class="conference-cta__button" title="Перейти на сайт конференции">зарегистрироваться</a>
+    </div>
+  </div>
+</div>
+<script>document.querySelector('.conference').onclick = function() {
+if (document.documentElement.scrollWidth < 330) {
+window.location.href = 'https://www.tn.ru/calendar/konferencziya-izhs-2025/?erid=2VtzqwA1R1S';
+}
+}
+</script>
+  </body>
+</html>

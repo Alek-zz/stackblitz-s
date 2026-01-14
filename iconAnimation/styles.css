@@ -1,0 +1,32 @@
+@media (hover: hover) {
+.icon.stream-icon-header {
+  overflow: visible;
+  width: 64px;
+  height: 64px;
+}
+
+
+.cameraLens {
+  fill: white;
+  stroke: currentColor;
+}
+
+.cameraBody {
+  fill: transparent;
+  stroke: black;
+}
+
+.stream-icon-header:hover .cameraBody {
+  fill: #f14950;
+  stroke:#f14950;
+  transform: scaleX(1);
+  transition: all .8s .2s;
+}
+
+.stream-icon-header:hover .cameraLens {
+  transform-origin: 57% 50%;
+  transform: scale(.6) rotate(180deg);
+  fill: white;
+  transition: transform .8s, stroke .8s .2s;
+  stroke: white;
+}}

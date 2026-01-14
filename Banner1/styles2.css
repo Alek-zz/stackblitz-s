@@ -1,0 +1,105 @@
+.cont {
+ background: 
+ url("/ima56.png"),
+ radial-gradient(circle closest-side at 31% 99%, #243645 325px, #2B3D4C 327px, #2B3D4C 440px, #304453 442px, #304453 550px, #243544 552px);
+ height: 438px;
+ width: 1512px;
+ position: relative;
+ font-family: Roboto;
+}
+
+img {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.txt {
+  width: 41%;
+  height: 68%;
+  position: absolute;
+  left: 46%;
+  top: 7%;
+  backdrop-filter: blur(10px); 
+  background: rgba(255, 255, 255, 0.2); 
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 40px;
+  gap: 15px;
+}
+
+.label {
+  background-color: #FFE530;
+  width: fit-content;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 10px 12px 10px 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.title {
+  color: white;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.description {
+  color: white;
+  font-size: larger;
+}
+
+.button {
+  background-color: #E30613;
+  color: white;
+  width: fit-content;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
+.buttonCont {
+flex-grow: 1;
+flex-shrink: 1;
+flex-basis: auto;
+align-content: center;
+}
+
+.description {
+  display: inline-block;
+  line-height: 2rem;
+}
+
+#promocode {
+  border-width: 1px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+#promocode:hover {
+  color: #FFE530;
+}
+
+.copied-icon {
+  display: none; 
+}
+
+

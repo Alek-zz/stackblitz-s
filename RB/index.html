@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+
+  <div id="main">
+
+  <div class='item'>     
+  <label for="orderAction"><b>Действие с заказом</b></label>
+  <select id="orderAction" size="4">
+    <option value="">Не выбрано</option>
+    <option value="create">Создание</option>
+    <option value="complete">Завершение</option>
+    <option value="return">Возврат</option>
+  </select>
+</div> 
+
+<div>
+  <label for="orderListForm"><b>История заказов</b></label>
+  <select id="orderListForm" size="4">
+  </select>
+</div>
+
+
+<div class='newLvlTitle'>
+    <label><b>Тип и значение нового уровня</b></label>
+</div>
+
+<div>
+    <select id="lvlTypeSelect" size="4">
+      <option value="L1">L1 (накопительный т.г)</option>
+      <option value="L2">L2 (ручной т.г)</option>
+      <option value="L3">L3 (накопительный пр.г)</option>
+      <option value="L4">L4 (ручной пр.г)</option>
+    </select>
+  </div>
+
+  <div id='lvlValueSelectBlock'>
+    <select id="lvlValueSelect" size="4">
+      <option value="base">Base</option>
+      <option value="silver">Silver</option>
+      <option value="gold">Gold</option>
+      <option value="platinum">Platinum</option>
+    </select>
+  </div>
+
+  <div id='newLValueSelectBlock'>
+    <label><b>Новое значение L</b></label>
+    <select id="lValue" size="4">
+      <option value="base">Base</option>
+      <option value="silver">Silver</option>
+      <option value="gold">Gold</option>
+      <option value="platinum">Platinum</option>
+    </select>
+  </div>
+
+<div id="btnList">
+    <button id="changeLvl">Действие</button>
+    <button id="changeYear">В следующий год</button>
+    <button id="clearSelectedItems">Очистить выбранное</button>
+    <button id="clearTxtArea">Очистить текст</button>
+  </div>
+
+  <div class="txtBlock">
+    <label><b>Результат</b></label>
+    <textarea spellcheck="false" id="txtArea"></textarea>
+  </div>  
+
+</div>
+    </body>
+</html>

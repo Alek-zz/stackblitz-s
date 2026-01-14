@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles2.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="cont">
+      
+      <div class="txt">
+        <div class="label">Выгодное предложение</div>
+        <div class='title'>Расчет изоляционных материалов для скатной кровли за 1 рубль! </div>
+        <div class='description'>По промокоду 
+          <b title="скопировать" id="promocode">1R-2025-IHC</b> 
+            <svg class="copied-icon icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0,0,256,256">
+              <g fill="#FFE530" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dashoffset="0"><g transform="scale(5.12,5.12)"><path d="M41.9375,8.625c-0.66406,0.02344 -1.27344,0.375 -1.625,0.9375l-18.8125,28.78125l-12.1875,-10.53125c-0.52344,-0.54297 -1.30859,-0.74609 -2.03125,-0.51953c-0.71875,0.22266 -1.25391,0.83203 -1.37891,1.57422c-0.125,0.74609 0.17578,1.49609 0.78516,1.94531l13.9375,12.0625c0.4375,0.37109 1.01563,0.53516 1.58203,0.45313c0.57031,-0.08594 1.07422,-0.41016 1.38672,-0.89062l20.09375,-30.6875c0.42969,-0.62891 0.46484,-1.44141 0.09375,-2.10547c-0.37109,-0.66016 -1.08594,-1.05469 -1.84375,-1.01953z"></path></g></g>
+              </svg>
+          юридическим лицам для объектов ИЖС до 31.03.2025</div>
+        <div class="buttonCont">
+        <div class="button">Заказать услугу</div></div>
+      </div>
+    </div>
+<script>
+
+document.getElementById("promocode").onclick = function() {
+    let n = document.getElementById("promocode").innerText;
+    let r = document.getElementById("promocode");
+    if (!n) return;
+		r.style.borderColor = '#FFE530';
+		navigator.clipboard.writeText(n).then(function() {
+      let e = setTimeout(function() {
+        r.style.borderColor = 'white';
+      }, 3e3)
+    })
+  }
+</script>
+
+  </body>
+</html>

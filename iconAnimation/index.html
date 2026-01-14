@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Other page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    
+  </head>
+  <body>
+  <svg class="icon stream-icon-header" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="#000">
+    <style>
+    @media (hover: hover) {
+    .stream-icon-header:hover .cameraBody {
+      transform: scaleX(1.2);
+      transition: all .8s .2s;
+    }
+    
+    .stream-icon-header:hover .cameraLens {
+      transform-origin: 59% 50%;
+      transform: scale(.6) rotate(180deg);
+      transition: transform .8s, fill .8s .2s;
+      fill: #000;
+    }}
+  </style>
+    <path class="cameraBody" d="M14 5H3C1.89543 5 1 5.89543 1 7V17C1 18.1046 1.89543 19 3 19H14C15.1046 19 16 18.1046 16 17V7C16 5.89543 15.1046 5 14 5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path class="cameraLens" d="M23 7L16 12L23 17V7Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+  </body>
+</html>
+
+<!-- <svg class="icon stream-icon-header" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="#000">
+  <style>
+  @media (hover: hover) {
+  .customer-links__link:has(.stream-icon-header):hover .cameraBody {
+    transform: scaleX(1.2);
+    transition: all .6s .2s;
+  }
+  
+  .customer-links__link:has(.stream-icon-header):hover .cameraLens {
+    transform-origin: 59% 50%;
+    transform: scale(.6) rotate(180deg);
+    transition: transform .6s, fill .6s .2s;
+    fill: #000;
+  }}
+</style>
+  <path class="cameraBody" d="M14 5H3C1.89543 5 1 5.89543 1 7V17C1 18.1046 1.89543 19 3 19H14C15.1046 19 16 18.1046 16 17V7C16 5.89543 15.1046 5 14 5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path class="cameraLens" d="M23 7L16 12L23 17V7Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+  </svg> -->

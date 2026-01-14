@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+}
+
+#main { 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+  height: 100vh;
+  gap: 15px;
+  padding: 20px;
+}
+
+.newLvlTitle {
+  flex-basis: 100%;
+}
+
+label {
+  margin-bottom: 15px;
+  display: block;
+}
+
+.newLvlTitle label {
+  margin-bottom: 0px;
+}
+
+select {
+width: 185px;
+height: 90px;
+}
+
+#txtArea {
+ width: 650px;
+}
+
+#btnList, #newLValueSelectBlock {
+  flex-basis: 100%;;
+}
